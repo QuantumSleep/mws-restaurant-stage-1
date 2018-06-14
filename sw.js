@@ -33,13 +33,12 @@ self.addEventListener('install', event => {
 
 self.addEventListener("fetch", event => {
     let cacheRequest = event.request;
-    console.log(event.request);
+    /* The below lines are based on the webinar*/
     if (event.request.url.indexOf('restaurant.html') > -1){
         cacheRequest = new Request("restaurant.html");
     }
     event.respondWith(
         caches.match(cacheRequest).then(response =>{
-            console.log("In cache");
             return response || fetch(event.request);
         })
     );
