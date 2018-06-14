@@ -1,0 +1,49 @@
+/*@charset "utf-8";
+/* CSS Document */
+@media only screen and (min-width: 550px) {
+    #restaurants-list li, #reviews-list li {
+        width: calc((100% - 60px) / 2);
+    }
+    #restaurant-name{
+        font-size:1.6rem;
+    }
+    #breadcrumb li {
+        font-size:1.6rem;
+    }
+    nav h1 a {
+        font-size:1.9rem;
+    }
+}
+@media only screen and (min-width: 825px){
+  #restaurants-list li, #reviews-list li {
+    width: calc((100% - 90px) / 3);
+  }
+  nav h1{
+      font-size:3vw;
+      padding: calc((80px - 3vw)/2) 0px;
+  }
+}
+
+@media only screen and (min-width: 1100px){
+  #restaurants-list li, #reviews-list li {
+    width: calc((100% - 120px) / 4);
+  }
+  #restaurant-img {
+      width:50%;
+  }
+  #restaurant-address {
+      order:3;
+      width:100%;
+  }
+  #restaurant-cuisine {
+    order:1;
+    width:50%;
+  }
+  #restaurant-hours td{
+      font-size:1.3rem;
+  }
+  #restaurant-hours {
+    margin-top: 150px;
+    margin-left: 30px;
+    }
+}
